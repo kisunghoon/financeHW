@@ -1,0 +1,607 @@
+[2024-12-06 11:06:47] [main] INFO  zerobase.dayone.DayoneApplication - Starting DayoneApplication using Java 11.0.25 on DESKTOP-G3817TA with PID 32468 (C:\Users\LG\IdeaProjects\dayone\build\classes\java\main started by LG in C:\Users\LG\IdeaProjects\dayone)
+[2024-12-06 11:06:47] [main] INFO  zerobase.dayone.DayoneApplication - No active profile set, falling back to default profiles: default
+[2024-12-06 11:06:49] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2024-12-06 11:06:49] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-12-06 11:06:49] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 87 ms. Found 3 JPA repository interfaces.
+[2024-12-06 11:06:49] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2024-12-06 11:06:49] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[2024-12-06 11:06:49] [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dayone.persist.CompanyRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-12-06 11:06:49] [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dayone.persist.DividendRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-12-06 11:06:49] [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dayone.persist.MemberRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-12-06 11:06:49] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+[2024-12-06 11:06:49] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@56928e17' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2024-12-06 11:06:49] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2024-12-06 11:06:50] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2024-12-06 11:06:50] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2024-12-06 11:06:50] [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2024-12-06 11:06:50] [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2024-12-06 11:06:50] [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2024-12-06 11:06:50] [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2463 ms
+[2024-12-06 11:06:50] [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2024-12-06 11:06:50] [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2024-12-06 11:06:50] [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dayone'
+[2024-12-06 11:06:50] [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-12-06 11:06:50] [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+[2024-12-06 11:06:51] [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2024-12-06 11:06:51] [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2024-12-06 11:06:52] [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2024-12-06 11:06:52] [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-12-06 11:06:55] [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-12-06 11:06:57] [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize(value="hasRole('READ')") found on specific method: public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.searchCompany(org.springframework.data.domain.Pageable)
+[2024-12-06 11:06:57] [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[zerobase.dayone.web.CompanyController; public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.searchCompany(org.springframework.data.domain.Pageable)]] with attributes [[authorize: 'hasRole('READ')', filter: 'null', filterTarget: 'null']]
+[2024-12-06 11:06:57] [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize(value="hasRole('WRITE')") found on specific method: public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.deleteCompany(java.lang.String)
+[2024-12-06 11:06:57] [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[zerobase.dayone.web.CompanyController; public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.deleteCompany(java.lang.String)]] with attributes [[authorize: 'hasRole('WRITE')', filter: 'null', filterTarget: 'null']]
+[2024-12-06 11:06:57] [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize(value="hasRole('WRITE')") found on specific method: public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.addCompany(zerobase.dayone.model.Company)
+[2024-12-06 11:06:57] [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[zerobase.dayone.web.CompanyController; public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.addCompany(zerobase.dayone.model.Company)]] with attributes [[authorize: 'hasRole('WRITE')', filter: 'null', filterTarget: 'null']]
+[2024-12-06 11:06:57] [main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/h2-console/**'] with []
+[2024-12-06 11:06:57] [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/**/signup']
+[2024-12-06 11:06:57] [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/**/signin']
+[2024-12-06 11:06:57] [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [hasAuthority('ROLE_READ')] for Ant [pattern='/company/**']
+[2024-12-06 11:06:57] [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [authenticated] for any request
+[2024-12-06 11:06:57] [main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3da30ce5, org.springframework.security.web.context.SecurityContextPersistenceFilter@394950ad, org.springframework.security.web.header.HeaderWriterFilter@48a61e38, org.springframework.security.web.authentication.logout.LogoutFilter@4b45c8e4, zerobase.dayone.security.JwtAuthenticationFilter@d0e4972, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@bae5e58, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@66e434e8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e4b70c6, org.springframework.security.web.session.SessionManagementFilter@4687c184, org.springframework.security.web.access.ExceptionTranslationFilter@69988d42, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@19542115]
+[2024-12-06 11:06:59] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2024-12-06 11:06:59] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2024-12-06 11:06:59] [main] INFO  zerobase.dayone.DayoneApplication - Started DayoneApplication in 12.431 seconds (JVM running for 15.173)
+[2024-12-06 11:07:15] [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-12-06 11:07:15] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2024-12-06 11:07:15] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+[2024-12-06 11:07:15] [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing POST /auth/signup
+[2024-12-06 11:07:15] [http-nio-8080-exec-1] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 11:07:15] [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+[2024-12-06 11:07:15] [http-nio-8080-exec-1] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [POST /auth/signup] with attributes [permitAll]
+[2024-12-06 11:07:15] [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured POST /auth/signup
+[2024-12-06 11:07:15] [http-nio-8080-exec-1] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 11:07:21] [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing POST /auth/signin
+[2024-12-06 11:07:21] [http-nio-8080-exec-3] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 11:07:21] [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+[2024-12-06 11:07:21] [http-nio-8080-exec-3] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [POST /auth/signin] with attributes [permitAll]
+[2024-12-06 11:07:21] [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured POST /auth/signin
+[2024-12-06 11:07:21] [http-nio-8080-exec-3] INFO  zerobase.dayone.web.AuthController - user login -> grace
+[2024-12-06 11:07:21] [http-nio-8080-exec-3] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 11:08:47] [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing POST /company
+[2024-12-06 11:08:47] [http-nio-8080-exec-6] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 11:08:47] [http-nio-8080-exec-6] INFO  z.d.s.JwtAuthenticationFilter - [grace] -> /company 
+[2024-12-06 11:08:47] [http-nio-8080-exec-6] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [POST /company] with attributes [hasAuthority('ROLE_READ')]
+[2024-12-06 11:08:47] [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured POST /company
+[2024-12-06 11:08:47] [http-nio-8080-exec-6] DEBUG o.s.s.a.i.a.MethodSecurityInterceptor - Authorized ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.addCompany(zerobase.dayone.model.Company); target is of class [zerobase.dayone.web.CompanyController] with attributes [[authorize: 'hasRole('WRITE')', filter: 'null', filterTarget: 'null']]
+[2024-12-06 11:08:51] [http-nio-8080-exec-6] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 11:08:59] [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /company/autocomplete?keyword=M
+[2024-12-06 11:08:59] [http-nio-8080-exec-7] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 11:08:59] [http-nio-8080-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+[2024-12-06 11:08:59] [http-nio-8080-exec-7] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Failed to authorize filter invocation [GET /company/autocomplete?keyword=M] with attributes [hasAuthority('ROLE_READ')]
+[2024-12-06 11:08:59] [http-nio-8080-exec-7] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+[2024-12-06 11:08:59] [http-nio-8080-exec-7] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 11:08:59] [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error?keyword=M
+[2024-12-06 11:08:59] [http-nio-8080-exec-7] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 11:08:59] [http-nio-8080-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+[2024-12-06 11:08:59] [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /error?keyword=M
+[2024-12-06 11:08:59] [http-nio-8080-exec-7] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 11:09:12] [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /company/autocomplete?keyword=1
+[2024-12-06 11:09:12] [http-nio-8080-exec-8] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 11:09:12] [http-nio-8080-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+[2024-12-06 11:09:12] [http-nio-8080-exec-8] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Failed to authorize filter invocation [GET /company/autocomplete?keyword=1] with attributes [hasAuthority('ROLE_READ')]
+[2024-12-06 11:09:12] [http-nio-8080-exec-8] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+[2024-12-06 11:09:12] [http-nio-8080-exec-8] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 11:09:12] [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error?keyword=1
+[2024-12-06 11:09:12] [http-nio-8080-exec-8] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 11:09:12] [http-nio-8080-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+[2024-12-06 11:09:12] [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /error?keyword=1
+[2024-12-06 11:09:12] [http-nio-8080-exec-8] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 11:09:40] [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /company/autocomplete?keyword=M
+[2024-12-06 11:09:40] [http-nio-8080-exec-9] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 11:09:40] [http-nio-8080-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+[2024-12-06 11:09:40] [http-nio-8080-exec-9] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Failed to authorize filter invocation [GET /company/autocomplete?keyword=M] with attributes [hasAuthority('ROLE_READ')]
+[2024-12-06 11:09:40] [http-nio-8080-exec-9] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+[2024-12-06 11:09:40] [http-nio-8080-exec-9] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 11:09:40] [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error?keyword=M
+[2024-12-06 11:09:40] [http-nio-8080-exec-9] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 11:09:40] [http-nio-8080-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+[2024-12-06 11:09:40] [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /error?keyword=M
+[2024-12-06 11:09:40] [http-nio-8080-exec-9] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 11:09:58] [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /company/autocomplete?keyword=M
+[2024-12-06 11:09:58] [http-nio-8080-exec-10] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 11:09:58] [http-nio-8080-exec-10] INFO  z.d.s.JwtAuthenticationFilter - [grace] -> /company/autocomplete 
+[2024-12-06 11:09:58] [http-nio-8080-exec-10] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /company/autocomplete?keyword=M] with attributes [hasAuthority('ROLE_READ')]
+[2024-12-06 11:09:58] [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /company/autocomplete?keyword=M
+[2024-12-06 11:09:58] [http-nio-8080-exec-10] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 11:10:11] [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /company/autocomplete?keyword=1
+[2024-12-06 11:10:11] [http-nio-8080-exec-2] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 11:10:11] [http-nio-8080-exec-2] INFO  z.d.s.JwtAuthenticationFilter - [grace] -> /company/autocomplete 
+[2024-12-06 11:10:11] [http-nio-8080-exec-2] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /company/autocomplete?keyword=1] with attributes [hasAuthority('ROLE_READ')]
+[2024-12-06 11:10:11] [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /company/autocomplete?keyword=1
+[2024-12-06 11:10:11] [http-nio-8080-exec-2] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 11:10:16] [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /company/autocomplete?keyword=m
+[2024-12-06 11:10:16] [http-nio-8080-exec-1] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 11:10:16] [http-nio-8080-exec-1] INFO  z.d.s.JwtAuthenticationFilter - [grace] -> /company/autocomplete 
+[2024-12-06 11:10:16] [http-nio-8080-exec-1] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /company/autocomplete?keyword=m] with attributes [hasAuthority('ROLE_READ')]
+[2024-12-06 11:10:16] [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /company/autocomplete?keyword=m
+[2024-12-06 11:10:16] [http-nio-8080-exec-1] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 11:10:19] [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /finance/dividend/3M Company (MMM)
+[2024-12-06 11:10:19] [http-nio-8080-exec-3] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 11:10:19] [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+[2024-12-06 11:10:19] [http-nio-8080-exec-3] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Failed to authorize filter invocation [GET /finance/dividend/3M Company (MMM)] with attributes [authenticated]
+[2024-12-06 11:10:19] [http-nio-8080-exec-3] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+[2024-12-06 11:10:19] [http-nio-8080-exec-3] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 11:10:19] [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+[2024-12-06 11:10:19] [http-nio-8080-exec-3] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 11:10:19] [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+[2024-12-06 11:10:19] [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /error
+[2024-12-06 11:10:19] [http-nio-8080-exec-3] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 11:10:26] [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /finance/dividend/3M Company (MMM)
+[2024-12-06 11:10:26] [http-nio-8080-exec-4] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 11:10:26] [http-nio-8080-exec-4] INFO  z.d.s.JwtAuthenticationFilter - [grace] -> /finance/dividend/3M%20Company%20(MMM) 
+[2024-12-06 11:10:26] [http-nio-8080-exec-4] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /finance/dividend/3M Company (MMM)] with attributes [authenticated]
+[2024-12-06 11:10:26] [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /finance/dividend/3M Company (MMM)
+[2024-12-06 11:10:29] [http-nio-8080-exec-4] INFO  z.dayone.service.FinanceService - search company -> 3M Company (MMM)
+[2024-12-06 11:10:29] [http-nio-8080-exec-4] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 11:10:35] [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /company/autocomplete?keyword=3
+[2024-12-06 11:10:35] [http-nio-8080-exec-5] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 11:10:35] [http-nio-8080-exec-5] INFO  z.d.s.JwtAuthenticationFilter - [grace] -> /company/autocomplete 
+[2024-12-06 11:10:35] [http-nio-8080-exec-5] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /company/autocomplete?keyword=3] with attributes [hasAuthority('ROLE_READ')]
+[2024-12-06 11:10:35] [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /company/autocomplete?keyword=3
+[2024-12-06 11:10:35] [http-nio-8080-exec-5] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 11:12:42] [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-12-06 11:12:42] [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2024-12-06 11:12:43] [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2024-12-06 11:12:52] [main] INFO  zerobase.dayone.DayoneApplication - Starting DayoneApplication using Java 11.0.25 on DESKTOP-G3817TA with PID 32080 (C:\Users\LG\IdeaProjects\dayone\build\classes\java\main started by LG in C:\Users\LG\IdeaProjects\dayone)
+[2024-12-06 11:12:52] [main] INFO  zerobase.dayone.DayoneApplication - No active profile set, falling back to default profiles: default
+[2024-12-06 11:12:53] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2024-12-06 11:12:53] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-12-06 11:12:53] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 89 ms. Found 3 JPA repository interfaces.
+[2024-12-06 11:12:53] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2024-12-06 11:12:53] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[2024-12-06 11:12:53] [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dayone.persist.CompanyRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-12-06 11:12:53] [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dayone.persist.DividendRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-12-06 11:12:53] [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dayone.persist.MemberRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-12-06 11:12:53] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+[2024-12-06 11:12:54] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@47311277' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2024-12-06 11:12:54] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2024-12-06 11:12:54] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2024-12-06 11:12:54] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2024-12-06 11:12:54] [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2024-12-06 11:12:54] [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2024-12-06 11:12:54] [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2024-12-06 11:12:54] [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2090 ms
+[2024-12-06 11:12:54] [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2024-12-06 11:12:54] [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2024-12-06 11:12:54] [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dayone'
+[2024-12-06 11:12:54] [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-12-06 11:12:54] [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+[2024-12-06 11:12:55] [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2024-12-06 11:12:55] [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2024-12-06 11:12:55] [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2024-12-06 11:12:55] [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-12-06 11:12:56] [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-12-06 11:12:57] [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize(value="hasRole('READ')") found on specific method: public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.searchCompany(org.springframework.data.domain.Pageable)
+[2024-12-06 11:12:57] [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[zerobase.dayone.web.CompanyController; public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.searchCompany(org.springframework.data.domain.Pageable)]] with attributes [[authorize: 'hasRole('READ')', filter: 'null', filterTarget: 'null']]
+[2024-12-06 11:12:57] [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize(value="hasRole('WRITE')") found on specific method: public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.addCompany(zerobase.dayone.model.Company)
+[2024-12-06 11:12:57] [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[zerobase.dayone.web.CompanyController; public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.addCompany(zerobase.dayone.model.Company)]] with attributes [[authorize: 'hasRole('WRITE')', filter: 'null', filterTarget: 'null']]
+[2024-12-06 11:12:57] [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize(value="hasRole('WRITE')") found on specific method: public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.deleteCompany(java.lang.String)
+[2024-12-06 11:12:57] [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[zerobase.dayone.web.CompanyController; public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.deleteCompany(java.lang.String)]] with attributes [[authorize: 'hasRole('WRITE')', filter: 'null', filterTarget: 'null']]
+[2024-12-06 11:12:57] [main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/h2-console/**'] with []
+[2024-12-06 11:12:57] [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/**/signup']
+[2024-12-06 11:12:57] [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/**/signin']
+[2024-12-06 11:12:57] [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [hasAuthority('ROLE_READ')] for Ant [pattern='/company/**']
+[2024-12-06 11:12:57] [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [authenticated] for any request
+[2024-12-06 11:12:57] [main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@36e358de, org.springframework.security.web.context.SecurityContextPersistenceFilter@78ab63b5, org.springframework.security.web.header.HeaderWriterFilter@5c261c74, org.springframework.security.web.authentication.logout.LogoutFilter@18c26588, zerobase.dayone.security.JwtAuthenticationFilter@69a3bf40, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a56f608, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@69988d42, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2bed5828, org.springframework.security.web.session.SessionManagementFilter@468eff41, org.springframework.security.web.access.ExceptionTranslationFilter@5a5c2889, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2041c9a3]
+[2024-12-06 11:12:58] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2024-12-06 11:12:58] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2024-12-06 11:12:58] [main] INFO  zerobase.dayone.DayoneApplication - Started DayoneApplication in 6.508 seconds (JVM running for 9.102)
+[2024-12-06 11:13:13] [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-12-06 11:13:13] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2024-12-06 11:13:13] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+[2024-12-06 11:13:13] [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing POST /auth/signup
+[2024-12-06 11:13:13] [http-nio-8080-exec-1] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 11:13:13] [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+[2024-12-06 11:13:13] [http-nio-8080-exec-1] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [POST /auth/signup] with attributes [permitAll]
+[2024-12-06 11:13:13] [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured POST /auth/signup
+[2024-12-06 11:13:14] [http-nio-8080-exec-1] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 11:13:19] [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing POST /auth/signin
+[2024-12-06 11:13:19] [http-nio-8080-exec-3] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 11:13:19] [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+[2024-12-06 11:13:19] [http-nio-8080-exec-3] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [POST /auth/signin] with attributes [permitAll]
+[2024-12-06 11:13:19] [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured POST /auth/signin
+[2024-12-06 11:13:19] [http-nio-8080-exec-3] INFO  zerobase.dayone.web.AuthController - user login -> grace
+[2024-12-06 11:13:19] [http-nio-8080-exec-3] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 11:13:34] [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing POST /company
+[2024-12-06 11:13:34] [http-nio-8080-exec-4] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 11:13:34] [http-nio-8080-exec-4] INFO  z.d.s.JwtAuthenticationFilter - [grace] -> /company 
+[2024-12-06 11:13:34] [http-nio-8080-exec-4] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [POST /company] with attributes [hasAuthority('ROLE_READ')]
+[2024-12-06 11:13:34] [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured POST /company
+[2024-12-06 11:13:34] [http-nio-8080-exec-4] DEBUG o.s.s.a.i.a.MethodSecurityInterceptor - Authorized ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.addCompany(zerobase.dayone.model.Company); target is of class [zerobase.dayone.web.CompanyController] with attributes [[authorize: 'hasRole('WRITE')', filter: 'null', filterTarget: 'null']]
+[2024-12-06 11:13:38] [http-nio-8080-exec-4] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 11:13:50] [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /company/autocomplete?keyword=3
+[2024-12-06 11:13:50] [http-nio-8080-exec-5] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 11:13:50] [http-nio-8080-exec-5] INFO  z.d.s.JwtAuthenticationFilter - [grace] -> /company/autocomplete 
+[2024-12-06 11:13:50] [http-nio-8080-exec-5] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /company/autocomplete?keyword=3] with attributes [hasAuthority('ROLE_READ')]
+[2024-12-06 11:13:50] [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /company/autocomplete?keyword=3
+[2024-12-06 11:13:50] [http-nio-8080-exec-5] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 11:13:55] [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /finance/dividend/3M Company (MMM)
+[2024-12-06 11:13:55] [http-nio-8080-exec-6] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 11:13:55] [http-nio-8080-exec-6] INFO  z.d.s.JwtAuthenticationFilter - [grace] -> /finance/dividend/3M%20Company%20(MMM) 
+[2024-12-06 11:13:55] [http-nio-8080-exec-6] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /finance/dividend/3M Company (MMM)] with attributes [authenticated]
+[2024-12-06 11:13:55] [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /finance/dividend/3M Company (MMM)
+[2024-12-06 11:13:58] [http-nio-8080-exec-6] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 11:57:36] [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-12-06 11:57:36] [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2024-12-06 11:57:36] [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2024-12-06 11:57:43] [main] INFO  zerobase.dayone.DayoneApplication - Starting DayoneApplication using Java 11.0.25 on DESKTOP-G3817TA with PID 8624 (C:\Users\LG\IdeaProjects\dayone\build\classes\java\main started by LG in C:\Users\LG\IdeaProjects\dayone)
+[2024-12-06 11:57:43] [main] INFO  zerobase.dayone.DayoneApplication - No active profile set, falling back to default profiles: default
+[2024-12-06 11:57:44] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2024-12-06 11:57:44] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-12-06 11:57:44] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 89 ms. Found 3 JPA repository interfaces.
+[2024-12-06 11:57:44] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2024-12-06 11:57:44] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[2024-12-06 11:57:44] [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dayone.persist.CompanyRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-12-06 11:57:44] [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dayone.persist.DividendRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-12-06 11:57:44] [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dayone.persist.MemberRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-12-06 11:57:44] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+[2024-12-06 11:57:44] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7930ffa9' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2024-12-06 11:57:44] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2024-12-06 11:57:44] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2024-12-06 11:57:44] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2024-12-06 11:57:44] [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2024-12-06 11:57:44] [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2024-12-06 11:57:45] [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2024-12-06 11:57:45] [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1845 ms
+[2024-12-06 11:57:45] [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2024-12-06 11:57:45] [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2024-12-06 11:57:45] [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dayone'
+[2024-12-06 11:57:45] [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-12-06 11:57:45] [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+[2024-12-06 11:57:45] [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2024-12-06 11:57:45] [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2024-12-06 11:57:46] [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2024-12-06 11:57:46] [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-12-06 11:57:46] [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-12-06 11:57:46] [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize(value="hasRole('WRITE')") found on specific method: public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.deleteCompany(java.lang.String)
+[2024-12-06 11:57:47] [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[zerobase.dayone.web.CompanyController; public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.deleteCompany(java.lang.String)]] with attributes [[authorize: 'hasRole('WRITE')', filter: 'null', filterTarget: 'null']]
+[2024-12-06 11:57:47] [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize(value="hasRole('WRITE')") found on specific method: public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.addCompany(zerobase.dayone.model.Company)
+[2024-12-06 11:57:47] [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[zerobase.dayone.web.CompanyController; public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.addCompany(zerobase.dayone.model.Company)]] with attributes [[authorize: 'hasRole('WRITE')', filter: 'null', filterTarget: 'null']]
+[2024-12-06 11:57:47] [main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/h2-console/**'] with []
+[2024-12-06 11:57:47] [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/**/signup']
+[2024-12-06 11:57:47] [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/**/signin']
+[2024-12-06 11:57:47] [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [hasAuthority('ROLE_READ')] for Ant [pattern='/company/**']
+[2024-12-06 11:57:47] [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [authenticated] for any request
+[2024-12-06 11:57:47] [main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@24bba1b7, org.springframework.security.web.context.SecurityContextPersistenceFilter@468eff41, org.springframework.security.web.header.HeaderWriterFilter@75566f4, org.springframework.security.web.authentication.logout.LogoutFilter@71e89a26, zerobase.dayone.security.JwtAuthenticationFilter@71e2843b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78ab63b5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@71806c64, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2041c9a3, org.springframework.security.web.session.SessionManagementFilter@7ab2e018, org.springframework.security.web.access.ExceptionTranslationFilter@31a80c88, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4efa7d2f]
+[2024-12-06 11:57:47] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2024-12-06 11:57:47] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2024-12-06 11:57:47] [main] INFO  zerobase.dayone.DayoneApplication - Started DayoneApplication in 5.257 seconds (JVM running for 7.305)
+[2024-12-06 11:58:15] [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-12-06 11:58:15] [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2024-12-06 11:58:15] [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[2024-12-06 11:58:15] [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing POST /auth/signup
+[2024-12-06 11:58:15] [http-nio-8080-exec-2] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 11:58:15] [http-nio-8080-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+[2024-12-06 11:58:15] [http-nio-8080-exec-2] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [POST /auth/signup] with attributes [permitAll]
+[2024-12-06 11:58:15] [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured POST /auth/signup
+[2024-12-06 11:58:16] [http-nio-8080-exec-2] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 11:58:19] [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing POST /auth/signin
+[2024-12-06 11:58:19] [http-nio-8080-exec-3] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 11:58:19] [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+[2024-12-06 11:58:19] [http-nio-8080-exec-3] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [POST /auth/signin] with attributes [permitAll]
+[2024-12-06 11:58:19] [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured POST /auth/signin
+[2024-12-06 11:58:19] [http-nio-8080-exec-3] INFO  zerobase.dayone.web.AuthController - user login -> grace
+[2024-12-06 11:58:19] [http-nio-8080-exec-3] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 11:58:34] [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing POST /company
+[2024-12-06 11:58:34] [http-nio-8080-exec-4] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 11:58:34] [http-nio-8080-exec-4] INFO  z.d.s.JwtAuthenticationFilter - [grace] -> /company 
+[2024-12-06 11:58:34] [http-nio-8080-exec-4] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [POST /company] with attributes [hasAuthority('ROLE_READ')]
+[2024-12-06 11:58:34] [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured POST /company
+[2024-12-06 11:58:34] [http-nio-8080-exec-4] DEBUG o.s.s.a.i.a.MethodSecurityInterceptor - Authorized ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.addCompany(zerobase.dayone.model.Company); target is of class [zerobase.dayone.web.CompanyController] with attributes [[authorize: 'hasRole('WRITE')', filter: 'null', filterTarget: 'null']]
+[2024-12-06 11:58:38] [http-nio-8080-exec-4] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 11:58:45] [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /finance/dividend/3M Company (MMM)
+[2024-12-06 11:58:45] [http-nio-8080-exec-5] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 11:58:45] [http-nio-8080-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+[2024-12-06 11:58:45] [http-nio-8080-exec-5] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Failed to authorize filter invocation [GET /finance/dividend/3M Company (MMM)] with attributes [authenticated]
+[2024-12-06 11:58:45] [http-nio-8080-exec-5] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+[2024-12-06 11:58:45] [http-nio-8080-exec-5] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 11:58:45] [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+[2024-12-06 11:58:45] [http-nio-8080-exec-5] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 11:58:45] [http-nio-8080-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+[2024-12-06 11:58:45] [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /error
+[2024-12-06 11:58:45] [http-nio-8080-exec-5] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 12:00:05] [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /company
+[2024-12-06 12:00:05] [http-nio-8080-exec-8] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 12:00:05] [http-nio-8080-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+[2024-12-06 12:00:05] [http-nio-8080-exec-8] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Failed to authorize filter invocation [GET /company] with attributes [hasAuthority('ROLE_READ')]
+[2024-12-06 12:00:05] [http-nio-8080-exec-8] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+[2024-12-06 12:00:05] [http-nio-8080-exec-8] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 12:00:05] [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+[2024-12-06 12:00:05] [http-nio-8080-exec-8] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 12:00:05] [http-nio-8080-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+[2024-12-06 12:00:05] [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /error
+[2024-12-06 12:00:05] [http-nio-8080-exec-8] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 12:00:27] [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /company
+[2024-12-06 12:00:27] [http-nio-8080-exec-9] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 12:00:27] [http-nio-8080-exec-9] INFO  z.d.s.JwtAuthenticationFilter - [grace] -> /company 
+[2024-12-06 12:00:27] [http-nio-8080-exec-9] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /company] with attributes [hasAuthority('ROLE_READ')]
+[2024-12-06 12:00:27] [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /company
+[2024-12-06 12:00:27] [http-nio-8080-exec-9] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 15:04:20] [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m2s704ms471µs800ns).
+[2024-12-06 16:16:59] [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-12-06 16:16:59] [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2024-12-06 16:16:59] [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2024-12-06 20:24:52] [main] INFO  zerobase.dayone.DayoneApplication - Starting DayoneApplication using Java 11.0.25 on DESKTOP-G3817TA with PID 22808 (C:\Users\LG\IdeaProjects\dayone\build\classes\java\main started by LG in C:\Users\LG\IdeaProjects\dayone)
+[2024-12-06 20:24:52] [main] INFO  zerobase.dayone.DayoneApplication - No active profile set, falling back to default profiles: default
+[2024-12-06 20:24:53] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2024-12-06 20:24:53] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-12-06 20:24:53] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 86 ms. Found 3 JPA repository interfaces.
+[2024-12-06 20:24:53] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2024-12-06 20:24:53] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[2024-12-06 20:24:53] [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dayone.persist.CompanyRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-12-06 20:24:53] [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dayone.persist.DividendRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-12-06 20:24:53] [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dayone.persist.MemberRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-12-06 20:24:53] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+[2024-12-06 20:24:54] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@34585ac9' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2024-12-06 20:24:54] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2024-12-06 20:24:54] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2024-12-06 20:24:54] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2024-12-06 20:24:54] [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2024-12-06 20:24:54] [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2024-12-06 20:24:55] [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2024-12-06 20:24:55] [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2306 ms
+[2024-12-06 20:24:55] [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2024-12-06 20:24:55] [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2024-12-06 20:24:55] [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dayone'
+[2024-12-06 20:24:55] [main] ERROR o.s.b.w.e.tomcat.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationFilter' defined in file [C:\Users\LG\IdeaProjects\dayone\build\classes\java\main\zerobase\dayone\security\JwtAuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'tokenProvider' defined in file [C:\Users\LG\IdeaProjects\dayone\build\classes\java\main\zerobase\dayone\security\TokenProvider.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'memberService' defined in file [C:\Users\LG\IdeaProjects\dayone\build\classes\java\main\zerobase\dayone\service\MemberService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+[2024-12-06 20:24:55] [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[2024-12-06 20:24:55] [main] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.25/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.25/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+ java.base@11.0.25/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+ java.base@11.0.25/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@11.0.25/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@11.0.25/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+ java.base@11.0.25/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+ java.base@11.0.25/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+ java.base@11.0.25/java.lang.Thread.run(Thread.java:829)
+[2024-12-06 20:24:55] [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+[2024-12-06 20:24:55] [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2024-12-06 20:24:55] [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2024-12-06 20:24:55] [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2024-12-06 20:24:55] [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in zerobase.dayone.service.MemberService required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+[2024-12-06 20:25:30] [main] INFO  zerobase.dayone.DayoneApplication - Starting DayoneApplication using Java 11.0.25 on DESKTOP-G3817TA with PID 5416 (C:\Users\LG\IdeaProjects\dayone\build\classes\java\main started by LG in C:\Users\LG\IdeaProjects\dayone)
+[2024-12-06 20:25:30] [main] INFO  zerobase.dayone.DayoneApplication - No active profile set, falling back to default profiles: default
+[2024-12-06 20:25:31] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2024-12-06 20:25:31] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-12-06 20:25:31] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 78 ms. Found 3 JPA repository interfaces.
+[2024-12-06 20:25:31] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2024-12-06 20:25:31] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[2024-12-06 20:25:31] [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dayone.persist.CompanyRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-12-06 20:25:31] [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dayone.persist.DividendRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-12-06 20:25:31] [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dayone.persist.MemberRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-12-06 20:25:31] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+[2024-12-06 20:25:32] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@5807efad' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2024-12-06 20:25:32] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2024-12-06 20:25:32] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2024-12-06 20:25:32] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2024-12-06 20:25:32] [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2024-12-06 20:25:32] [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2024-12-06 20:25:32] [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2024-12-06 20:25:32] [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1678 ms
+[2024-12-06 20:25:32] [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2024-12-06 20:25:32] [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2024-12-06 20:25:32] [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dayone'
+[2024-12-06 20:25:33] [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-12-06 20:25:33] [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+[2024-12-06 20:25:33] [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2024-12-06 20:25:33] [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2024-12-06 20:25:34] [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2024-12-06 20:25:34] [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-12-06 20:25:35] [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-12-06 20:25:35] [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize(value="hasRole('WRITE')") found on specific method: public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.addCompany(zerobase.dayone.model.Company)
+[2024-12-06 20:25:35] [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[zerobase.dayone.web.CompanyController; public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.addCompany(zerobase.dayone.model.Company)]] with attributes [[authorize: 'hasRole('WRITE')', filter: 'null', filterTarget: 'null']]
+[2024-12-06 20:25:35] [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize(value="hasRole('READ')") found on specific method: public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.searchCompany(org.springframework.data.domain.Pageable)
+[2024-12-06 20:25:35] [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[zerobase.dayone.web.CompanyController; public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.searchCompany(org.springframework.data.domain.Pageable)]] with attributes [[authorize: 'hasRole('READ')', filter: 'null', filterTarget: 'null']]
+[2024-12-06 20:25:35] [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize(value="hasRole('WRITE')") found on specific method: public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.deleteCompany(java.lang.String)
+[2024-12-06 20:25:35] [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[zerobase.dayone.web.CompanyController; public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.deleteCompany(java.lang.String)]] with attributes [[authorize: 'hasRole('WRITE')', filter: 'null', filterTarget: 'null']]
+[2024-12-06 20:25:35] [main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/h2-console/**'] with []
+[2024-12-06 20:25:35] [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/**/signup']
+[2024-12-06 20:25:35] [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/**/signin']
+[2024-12-06 20:25:35] [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [hasAuthority('ROLE_READ')] for Ant [pattern='/company/**']
+[2024-12-06 20:25:35] [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [authenticated] for any request
+[2024-12-06 20:25:35] [main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@69ae7632, org.springframework.security.web.context.SecurityContextPersistenceFilter@1b868ef0, org.springframework.security.web.header.HeaderWriterFilter@1640a6b5, org.springframework.security.web.authentication.logout.LogoutFilter@7b6b99c5, zerobase.dayone.security.JwtAuthenticationFilter@40b8158d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@16e84d93, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@572db5ee, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1bbfd42f, org.springframework.security.web.session.SessionManagementFilter@63ccb1b2, org.springframework.security.web.access.ExceptionTranslationFilter@5b2c41f9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@69988d42]
+[2024-12-06 20:25:36] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2024-12-06 20:25:36] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2024-12-06 20:25:36] [main] INFO  zerobase.dayone.DayoneApplication - Started DayoneApplication in 6.183 seconds (JVM running for 10.681)
+[2024-12-06 20:26:03] [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-12-06 20:26:03] [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2024-12-06 20:26:03] [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+[2024-12-06 20:26:03] [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing POST /auth/signup
+[2024-12-06 20:26:03] [http-nio-8080-exec-2] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 20:26:03] [http-nio-8080-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+[2024-12-06 20:26:03] [http-nio-8080-exec-2] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [POST /auth/signup] with attributes [permitAll]
+[2024-12-06 20:26:03] [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured POST /auth/signup
+[2024-12-06 20:26:04] [http-nio-8080-exec-2] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 20:26:07] [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing POST /auth/signin
+[2024-12-06 20:26:07] [http-nio-8080-exec-3] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 20:26:07] [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+[2024-12-06 20:26:07] [http-nio-8080-exec-3] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [POST /auth/signin] with attributes [permitAll]
+[2024-12-06 20:26:07] [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured POST /auth/signin
+[2024-12-06 20:26:07] [http-nio-8080-exec-3] INFO  zerobase.dayone.web.AuthController - user login -> grace
+[2024-12-06 20:26:07] [http-nio-8080-exec-3] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 20:26:17] [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing POST /company
+[2024-12-06 20:26:17] [http-nio-8080-exec-4] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 20:26:17] [http-nio-8080-exec-4] INFO  z.d.s.JwtAuthenticationFilter - [grace] -> /company 
+[2024-12-06 20:26:17] [http-nio-8080-exec-4] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [POST /company] with attributes [hasAuthority('ROLE_READ')]
+[2024-12-06 20:26:17] [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured POST /company
+[2024-12-06 20:26:17] [http-nio-8080-exec-4] DEBUG o.s.s.a.i.a.MethodSecurityInterceptor - Authorized ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.addCompany(zerobase.dayone.model.Company); target is of class [zerobase.dayone.web.CompanyController] with attributes [[authorize: 'hasRole('WRITE')', filter: 'null', filterTarget: 'null']]
+[2024-12-06 20:26:21] [http-nio-8080-exec-4] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 20:26:26] [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing POST /company
+[2024-12-06 20:26:26] [http-nio-8080-exec-5] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 20:26:26] [http-nio-8080-exec-5] INFO  z.d.s.JwtAuthenticationFilter - [grace] -> /company 
+[2024-12-06 20:26:26] [http-nio-8080-exec-5] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [POST /company] with attributes [hasAuthority('ROLE_READ')]
+[2024-12-06 20:26:26] [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured POST /company
+[2024-12-06 20:26:26] [http-nio-8080-exec-5] DEBUG o.s.s.a.i.a.MethodSecurityInterceptor - Authorized ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.addCompany(zerobase.dayone.model.Company); target is of class [zerobase.dayone.web.CompanyController] with attributes [[authorize: 'hasRole('WRITE')', filter: 'null', filterTarget: 'null']]
+[2024-12-06 20:26:26] [http-nio-8080-exec-5] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 20:26:34] [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /finance/dividend/3M Company (MMM)
+[2024-12-06 20:26:34] [http-nio-8080-exec-7] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 20:26:34] [http-nio-8080-exec-7] INFO  z.d.s.JwtAuthenticationFilter - [grace] -> /finance/dividend/3M%20Company%20(MMM) 
+[2024-12-06 20:26:34] [http-nio-8080-exec-7] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /finance/dividend/3M Company (MMM)] with attributes [authenticated]
+[2024-12-06 20:26:34] [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /finance/dividend/3M Company (MMM)
+[2024-12-06 20:26:37] [http-nio-8080-exec-7] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 20:26:43] [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /company
+[2024-12-06 20:26:43] [http-nio-8080-exec-8] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 20:26:43] [http-nio-8080-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+[2024-12-06 20:26:43] [http-nio-8080-exec-8] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Failed to authorize filter invocation [GET /company] with attributes [hasAuthority('ROLE_READ')]
+[2024-12-06 20:26:43] [http-nio-8080-exec-8] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+[2024-12-06 20:26:43] [http-nio-8080-exec-8] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 20:26:43] [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+[2024-12-06 20:26:43] [http-nio-8080-exec-8] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 20:26:43] [http-nio-8080-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+[2024-12-06 20:26:43] [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /error
+[2024-12-06 20:26:43] [http-nio-8080-exec-8] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 20:26:47] [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /company
+[2024-12-06 20:26:47] [http-nio-8080-exec-9] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 20:26:47] [http-nio-8080-exec-9] INFO  z.d.s.JwtAuthenticationFilter - [grace] -> /company 
+[2024-12-06 20:26:47] [http-nio-8080-exec-9] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /company] with attributes [hasAuthority('ROLE_READ')]
+[2024-12-06 20:26:47] [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /company
+[2024-12-06 20:26:47] [http-nio-8080-exec-9] DEBUG o.s.s.a.i.a.MethodSecurityInterceptor - Authorized ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.searchCompany(org.springframework.data.domain.Pageable); target is of class [zerobase.dayone.web.CompanyController] with attributes [[authorize: 'hasRole('READ')', filter: 'null', filterTarget: 'null']]
+[2024-12-06 20:26:47] [http-nio-8080-exec-9] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 20:26:51] [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /company
+[2024-12-06 20:26:51] [http-nio-8080-exec-10] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 20:26:51] [http-nio-8080-exec-10] INFO  z.d.s.JwtAuthenticationFilter - [grace] -> /company 
+[2024-12-06 20:26:51] [http-nio-8080-exec-10] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /company] with attributes [hasAuthority('ROLE_READ')]
+[2024-12-06 20:26:51] [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /company
+[2024-12-06 20:26:51] [http-nio-8080-exec-10] DEBUG o.s.s.a.i.a.MethodSecurityInterceptor - Authorized ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.searchCompany(org.springframework.data.domain.Pageable); target is of class [zerobase.dayone.web.CompanyController] with attributes [[authorize: 'hasRole('READ')', filter: 'null', filterTarget: 'null']]
+[2024-12-06 20:26:51] [http-nio-8080-exec-10] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 20:27:28] [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /company/autocomplete?keyword=3
+[2024-12-06 20:27:28] [http-nio-8080-exec-1] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 20:27:28] [http-nio-8080-exec-1] INFO  z.d.s.JwtAuthenticationFilter - [grace] -> /company/autocomplete 
+[2024-12-06 20:27:28] [http-nio-8080-exec-1] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /company/autocomplete?keyword=3] with attributes [hasAuthority('ROLE_READ')]
+[2024-12-06 20:27:28] [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /company/autocomplete?keyword=3
+[2024-12-06 20:27:28] [http-nio-8080-exec-1] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 20:28:35] [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing DELETE /company/MMM
+[2024-12-06 20:28:35] [http-nio-8080-exec-4] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 20:28:35] [http-nio-8080-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+[2024-12-06 20:28:35] [http-nio-8080-exec-4] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Failed to authorize filter invocation [DELETE /company/MMM] with attributes [hasAuthority('ROLE_READ')]
+[2024-12-06 20:28:35] [http-nio-8080-exec-4] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+[2024-12-06 20:28:35] [http-nio-8080-exec-4] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 20:28:35] [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing DELETE /error
+[2024-12-06 20:28:35] [http-nio-8080-exec-4] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 20:28:35] [http-nio-8080-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+[2024-12-06 20:28:35] [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured DELETE /error
+[2024-12-06 20:28:35] [http-nio-8080-exec-4] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 20:28:50] [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing DELETE /company/MMM
+[2024-12-06 20:28:50] [http-nio-8080-exec-5] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 20:28:50] [http-nio-8080-exec-5] INFO  z.d.s.JwtAuthenticationFilter - [grace] -> /company/MMM 
+[2024-12-06 20:28:50] [http-nio-8080-exec-5] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [DELETE /company/MMM] with attributes [hasAuthority('ROLE_READ')]
+[2024-12-06 20:28:50] [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured DELETE /company/MMM
+[2024-12-06 20:28:50] [http-nio-8080-exec-5] DEBUG o.s.s.a.i.a.MethodSecurityInterceptor - Authorized ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.deleteCompany(java.lang.String); target is of class [zerobase.dayone.web.CompanyController] with attributes [[authorize: 'hasRole('WRITE')', filter: 'null', filterTarget: 'null']]
+[2024-12-06 20:28:50] [http-nio-8080-exec-5] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 20:29:07] [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing POST /auth/signup
+[2024-12-06 20:29:07] [http-nio-8080-exec-6] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 20:29:07] [http-nio-8080-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+[2024-12-06 20:29:07] [http-nio-8080-exec-6] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [POST /auth/signup] with attributes [permitAll]
+[2024-12-06 20:29:07] [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured POST /auth/signup
+[2024-12-06 20:29:07] [http-nio-8080-exec-6] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 20:29:19] [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-12-06 20:29:19] [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2024-12-06 20:29:19] [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2024-12-06 20:32:19] [main] INFO  zerobase.dayone.DayoneApplication - Starting DayoneApplication using Java 11.0.25 on DESKTOP-G3817TA with PID 33164 (C:\Users\LG\IdeaProjects\dayone\build\classes\java\main started by LG in C:\Users\LG\IdeaProjects\dayone)
+[2024-12-06 20:32:19] [main] INFO  zerobase.dayone.DayoneApplication - No active profile set, falling back to default profiles: default
+[2024-12-06 20:32:20] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2024-12-06 20:32:20] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-12-06 20:32:20] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 74 ms. Found 3 JPA repository interfaces.
+[2024-12-06 20:32:20] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2024-12-06 20:32:20] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[2024-12-06 20:32:20] [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dayone.persist.CompanyRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-12-06 20:32:20] [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dayone.persist.DividendRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-12-06 20:32:20] [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dayone.persist.MemberRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-12-06 20:32:20] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+[2024-12-06 20:32:21] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@316acbb5' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2024-12-06 20:32:21] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2024-12-06 20:32:21] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2024-12-06 20:32:21] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2024-12-06 20:32:21] [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2024-12-06 20:32:21] [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2024-12-06 20:32:21] [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2024-12-06 20:32:21] [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1593 ms
+[2024-12-06 20:32:21] [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2024-12-06 20:32:21] [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2024-12-06 20:32:21] [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dayone'
+[2024-12-06 20:32:22] [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-12-06 20:32:22] [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+[2024-12-06 20:32:22] [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2024-12-06 20:32:22] [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2024-12-06 20:32:23] [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2024-12-06 20:32:23] [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-12-06 20:32:23] [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-12-06 20:32:23] [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize(value="hasRole('WRITE')") found on specific method: public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.deleteCompany(java.lang.String)
+[2024-12-06 20:32:23] [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[zerobase.dayone.web.CompanyController; public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.deleteCompany(java.lang.String)]] with attributes [[authorize: 'hasRole('WRITE')', filter: 'null', filterTarget: 'null']]
+[2024-12-06 20:32:23] [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize(value="hasRole('READ')") found on specific method: public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.searchCompany(org.springframework.data.domain.Pageable)
+[2024-12-06 20:32:23] [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[zerobase.dayone.web.CompanyController; public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.searchCompany(org.springframework.data.domain.Pageable)]] with attributes [[authorize: 'hasRole('READ')', filter: 'null', filterTarget: 'null']]
+[2024-12-06 20:32:23] [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize(value="hasRole('WRITE')") found on specific method: public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.addCompany(zerobase.dayone.model.Company)
+[2024-12-06 20:32:23] [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[zerobase.dayone.web.CompanyController; public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.addCompany(zerobase.dayone.model.Company)]] with attributes [[authorize: 'hasRole('WRITE')', filter: 'null', filterTarget: 'null']]
+[2024-12-06 20:32:23] [main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/h2-console/**'] with []
+[2024-12-06 20:32:23] [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/**/signup']
+[2024-12-06 20:32:23] [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/**/signin']
+[2024-12-06 20:32:23] [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [hasAuthority('ROLE_READ')] for Ant [pattern='/company/**']
+[2024-12-06 20:32:23] [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [authenticated] for any request
+[2024-12-06 20:32:23] [main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@16f2d883, org.springframework.security.web.context.SecurityContextPersistenceFilter@740fccd2, org.springframework.security.web.header.HeaderWriterFilter@5b2c41f9, org.springframework.security.web.authentication.logout.LogoutFilter@67216c33, zerobase.dayone.security.JwtAuthenticationFilter@46590dd0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@63ccb1b2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6c9b6332, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@71806c64, org.springframework.security.web.session.SessionManagementFilter@abe7d36, org.springframework.security.web.access.ExceptionTranslationFilter@205b73d8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3b399f5a]
+[2024-12-06 20:32:24] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2024-12-06 20:32:24] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2024-12-06 20:32:24] [main] INFO  zerobase.dayone.DayoneApplication - Started DayoneApplication in 5.0 seconds (JVM running for 7.132)
+[2024-12-06 20:32:35] [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-12-06 20:32:35] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2024-12-06 20:32:35] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[2024-12-06 20:32:35] [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing POST /auth/signup
+[2024-12-06 20:32:35] [http-nio-8080-exec-1] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 20:32:35] [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+[2024-12-06 20:32:35] [http-nio-8080-exec-1] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [POST /auth/signup] with attributes [permitAll]
+[2024-12-06 20:32:35] [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured POST /auth/signup
+[2024-12-06 20:32:36] [http-nio-8080-exec-1] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 20:32:39] [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing POST /auth/signin
+[2024-12-06 20:32:39] [http-nio-8080-exec-3] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 20:32:39] [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+[2024-12-06 20:32:39] [http-nio-8080-exec-3] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [POST /auth/signin] with attributes [permitAll]
+[2024-12-06 20:32:39] [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured POST /auth/signin
+[2024-12-06 20:32:40] [http-nio-8080-exec-3] INFO  zerobase.dayone.web.AuthController - user login -> grace
+[2024-12-06 20:32:40] [http-nio-8080-exec-3] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 20:32:48] [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing POST /company
+[2024-12-06 20:32:48] [http-nio-8080-exec-4] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 20:32:48] [http-nio-8080-exec-4] INFO  z.d.s.JwtAuthenticationFilter - [grace] -> /company 
+[2024-12-06 20:32:48] [http-nio-8080-exec-4] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [POST /company] with attributes [hasAuthority('ROLE_READ')]
+[2024-12-06 20:32:48] [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured POST /company
+[2024-12-06 20:32:48] [http-nio-8080-exec-4] DEBUG o.s.s.a.i.a.MethodSecurityInterceptor - Authorized ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.addCompany(zerobase.dayone.model.Company); target is of class [zerobase.dayone.web.CompanyController] with attributes [[authorize: 'hasRole('WRITE')', filter: 'null', filterTarget: 'null']]
+[2024-12-06 20:32:52] [http-nio-8080-exec-4] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 20:32:59] [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /finance/dividend/3M Company (MMM)
+[2024-12-06 20:32:59] [http-nio-8080-exec-5] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 20:32:59] [http-nio-8080-exec-5] INFO  z.d.s.JwtAuthenticationFilter - [grace] -> /finance/dividend/3M%20Company%20(MMM) 
+[2024-12-06 20:32:59] [http-nio-8080-exec-5] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /finance/dividend/3M Company (MMM)] with attributes [authenticated]
+[2024-12-06 20:32:59] [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /finance/dividend/3M Company (MMM)
+[2024-12-06 20:33:02] [http-nio-8080-exec-5] INFO  z.dayone.service.FinanceService - search company -> 3M Company (MMM)
+[2024-12-06 20:33:03] [http-nio-8080-exec-5] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 20:33:09] [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /company/autocomplete?keyword=3
+[2024-12-06 20:33:09] [http-nio-8080-exec-6] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 20:33:09] [http-nio-8080-exec-6] INFO  z.d.s.JwtAuthenticationFilter - [grace] -> /company/autocomplete 
+[2024-12-06 20:33:09] [http-nio-8080-exec-6] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /company/autocomplete?keyword=3] with attributes [hasAuthority('ROLE_READ')]
+[2024-12-06 20:33:09] [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /company/autocomplete?keyword=3
+[2024-12-06 20:33:09] [http-nio-8080-exec-6] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 20:33:14] [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing DELETE /company/MMM
+[2024-12-06 20:33:14] [http-nio-8080-exec-7] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-12-06 20:33:14] [http-nio-8080-exec-7] INFO  z.d.s.JwtAuthenticationFilter - [grace] -> /company/MMM 
+[2024-12-06 20:33:14] [http-nio-8080-exec-7] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [DELETE /company/MMM] with attributes [hasAuthority('ROLE_READ')]
+[2024-12-06 20:33:14] [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured DELETE /company/MMM
+[2024-12-06 20:33:14] [http-nio-8080-exec-7] DEBUG o.s.s.a.i.a.MethodSecurityInterceptor - Authorized ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.deleteCompany(java.lang.String); target is of class [zerobase.dayone.web.CompanyController] with attributes [[authorize: 'hasRole('WRITE')', filter: 'null', filterTarget: 'null']]
+[2024-12-06 20:33:15] [http-nio-8080-exec-7] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-12-06 20:33:24] [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-12-06 20:33:24] [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2024-12-06 20:33:25] [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

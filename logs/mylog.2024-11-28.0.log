@@ -1,0 +1,306 @@
+[2024-11-28 19:17:50] [main] INFO  zerobase.dayone.DayoneApplication - Starting DayoneApplication using Java 11.0.25 on DESKTOP-G3817TA with PID 23664 (C:\Users\LG\IdeaProjects\dayone\build\classes\java\main started by LG in C:\Users\LG\IdeaProjects\dayone)
+[2024-11-28 19:17:50] [main] INFO  zerobase.dayone.DayoneApplication - No active profile set, falling back to default profiles: default
+[2024-11-28 19:17:51] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2024-11-28 19:17:51] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-11-28 19:17:51] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 86 ms. Found 3 JPA repository interfaces.
+[2024-11-28 19:17:51] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2024-11-28 19:17:51] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[2024-11-28 19:17:51] [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dayone.persist.CompanyRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-11-28 19:17:51] [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dayone.persist.DividendRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-11-28 19:17:51] [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dayone.persist.MemberRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-11-28 19:17:51] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+[2024-11-28 19:17:52] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@40230eb9' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2024-11-28 19:17:52] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2024-11-28 19:17:52] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2024-11-28 19:17:52] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2024-11-28 19:17:52] [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2024-11-28 19:17:52] [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2024-11-28 19:17:52] [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2024-11-28 19:17:52] [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1685 ms
+[2024-11-28 19:17:52] [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2024-11-28 19:17:52] [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2024-11-28 19:17:52] [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dayone'
+[2024-11-28 19:17:53] [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-11-28 19:17:53] [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+[2024-11-28 19:17:53] [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2024-11-28 19:17:53] [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2024-11-28 19:17:54] [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2024-11-28 19:17:54] [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-11-28 19:17:54] [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-11-28 19:17:55] [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize(value="hasRole('WRITE')") found on specific method: public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.deleteCompany(java.lang.String)
+[2024-11-28 19:17:55] [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[zerobase.dayone.web.CompanyController; public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.deleteCompany(java.lang.String)]] with attributes [[authorize: 'hasRole('WRITE')', filter: 'null', filterTarget: 'null']]
+[2024-11-28 19:17:55] [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize(value="hasRole('WRITE')") found on specific method: public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.addCompany(zerobase.dayone.model.Company)
+[2024-11-28 19:17:55] [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[zerobase.dayone.web.CompanyController; public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.addCompany(zerobase.dayone.model.Company)]] with attributes [[authorize: 'hasRole('WRITE')', filter: 'null', filterTarget: 'null']]
+[2024-11-28 19:17:55] [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize(value="hasRole('READ')") found on specific method: public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.searchCompany(org.springframework.data.domain.Pageable)
+[2024-11-28 19:17:55] [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[zerobase.dayone.web.CompanyController; public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.searchCompany(org.springframework.data.domain.Pageable)]] with attributes [[authorize: 'hasRole('READ')', filter: 'null', filterTarget: 'null']]
+[2024-11-28 19:17:55] [main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/h2-console/**'] with []
+[2024-11-28 19:17:55] [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/**/signup']
+[2024-11-28 19:17:55] [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/**/signin']
+[2024-11-28 19:17:55] [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [hasAuthority('ROLE_READ')] for Ant [pattern='/company/**']
+[2024-11-28 19:17:55] [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [authenticated] for any request
+[2024-11-28 19:17:55] [main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5089a72b, org.springframework.security.web.context.SecurityContextPersistenceFilter@b9c9bf5, org.springframework.security.web.header.HeaderWriterFilter@61d527ac, org.springframework.security.web.authentication.logout.LogoutFilter@66e434e8, zerobase.dayone.security.JwtAuthenticationFilter@71e2843b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@16f2d883, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@48a61e38, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1164990a, org.springframework.security.web.session.SessionManagementFilter@1a56f608, org.springframework.security.web.access.ExceptionTranslationFilter@5c261c74, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7c0035dd]
+[2024-11-28 19:17:55] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2024-11-28 19:17:55] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2024-11-28 19:17:55] [main] INFO  zerobase.dayone.DayoneApplication - Started DayoneApplication in 5.45 seconds (JVM running for 7.674)
+[2024-11-28 19:18:33] [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-11-28 19:18:33] [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2024-11-28 19:18:33] [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2024-11-28 19:18:38] [main] INFO  zerobase.dayone.DayoneApplication - Starting DayoneApplication using Java 11.0.25 on DESKTOP-G3817TA with PID 14544 (C:\Users\LG\IdeaProjects\dayone\build\classes\java\main started by LG in C:\Users\LG\IdeaProjects\dayone)
+[2024-11-28 19:18:38] [main] INFO  zerobase.dayone.DayoneApplication - No active profile set, falling back to default profiles: default
+[2024-11-28 19:18:39] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2024-11-28 19:18:39] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-11-28 19:18:39] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 79 ms. Found 3 JPA repository interfaces.
+[2024-11-28 19:18:39] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2024-11-28 19:18:39] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[2024-11-28 19:18:39] [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dayone.persist.CompanyRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-11-28 19:18:39] [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dayone.persist.DividendRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-11-28 19:18:39] [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dayone.persist.MemberRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-11-28 19:18:39] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+[2024-11-28 19:18:39] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@47311277' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2024-11-28 19:18:39] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2024-11-28 19:18:40] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2024-11-28 19:18:40] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2024-11-28 19:18:40] [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2024-11-28 19:18:40] [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2024-11-28 19:18:40] [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2024-11-28 19:18:40] [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1975 ms
+[2024-11-28 19:18:40] [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2024-11-28 19:18:40] [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2024-11-28 19:18:40] [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dayone'
+[2024-11-28 19:18:40] [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-11-28 19:18:40] [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+[2024-11-28 19:18:40] [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2024-11-28 19:18:40] [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2024-11-28 19:18:41] [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2024-11-28 19:18:41] [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-11-28 19:18:42] [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-11-28 19:18:42] [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize(value="hasRole('WRITE')") found on specific method: public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.addCompany(zerobase.dayone.model.Company)
+[2024-11-28 19:18:42] [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[zerobase.dayone.web.CompanyController; public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.addCompany(zerobase.dayone.model.Company)]] with attributes [[authorize: 'hasRole('WRITE')', filter: 'null', filterTarget: 'null']]
+[2024-11-28 19:18:42] [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize(value="hasRole('READ')") found on specific method: public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.searchCompany(org.springframework.data.domain.Pageable)
+[2024-11-28 19:18:42] [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[zerobase.dayone.web.CompanyController; public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.searchCompany(org.springframework.data.domain.Pageable)]] with attributes [[authorize: 'hasRole('READ')', filter: 'null', filterTarget: 'null']]
+[2024-11-28 19:18:42] [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize(value="hasRole('WRITE')") found on specific method: public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.deleteCompany(java.lang.String)
+[2024-11-28 19:18:42] [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[zerobase.dayone.web.CompanyController; public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.deleteCompany(java.lang.String)]] with attributes [[authorize: 'hasRole('WRITE')', filter: 'null', filterTarget: 'null']]
+[2024-11-28 19:18:42] [main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/h2-console/**'] with []
+[2024-11-28 19:18:42] [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/**/signup']
+[2024-11-28 19:18:42] [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/**/signin']
+[2024-11-28 19:18:42] [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [hasAuthority('ROLE_READ')] for Ant [pattern='/company/**']
+[2024-11-28 19:18:42] [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [authenticated] for any request
+[2024-11-28 19:18:42] [main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@52a2e2fb, org.springframework.security.web.context.SecurityContextPersistenceFilter@1a56f608, org.springframework.security.web.header.HeaderWriterFilter@41f61188, org.springframework.security.web.authentication.logout.LogoutFilter@54eb2bf6, zerobase.dayone.security.JwtAuthenticationFilter@69a3bf40, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@b9c9bf5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1bbfd42f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7c0035dd, org.springframework.security.web.session.SessionManagementFilter@78ab63b5, org.springframework.security.web.access.ExceptionTranslationFilter@75566f4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2bed5828]
+[2024-11-28 19:18:43] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2024-11-28 19:18:43] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2024-11-28 19:18:43] [main] INFO  zerobase.dayone.DayoneApplication - Started DayoneApplication in 5.285 seconds (JVM running for 7.241)
+[2024-11-28 19:19:38] [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-11-28 19:19:38] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2024-11-28 19:19:38] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+[2024-11-28 19:19:38] [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing POST /auth/signup
+[2024-11-28 19:19:38] [http-nio-8080-exec-1] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-11-28 19:19:38] [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+[2024-11-28 19:19:38] [http-nio-8080-exec-1] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [POST /auth/signup] with attributes [permitAll]
+[2024-11-28 19:19:38] [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured POST /auth/signup
+[2024-11-28 19:19:38] [http-nio-8080-exec-1] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-11-28 19:19:42] [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing POST /auth/signin
+[2024-11-28 19:19:42] [http-nio-8080-exec-3] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-11-28 19:19:42] [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+[2024-11-28 19:19:42] [http-nio-8080-exec-3] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [POST /auth/signin] with attributes [permitAll]
+[2024-11-28 19:19:42] [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured POST /auth/signin
+[2024-11-28 19:19:43] [http-nio-8080-exec-3] INFO  zerobase.dayone.web.AuthController - user login -> grace
+[2024-11-28 19:19:43] [http-nio-8080-exec-3] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-11-28 19:49:24] [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-11-28 19:49:24] [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2024-11-28 19:49:24] [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2024-11-28 21:22:00] [main] INFO  zerobase.dayone.DayoneApplication - Starting DayoneApplication using Java 11.0.25 on DESKTOP-G3817TA with PID 14108 (C:\Users\LG\IdeaProjects\dayone\build\classes\java\main started by LG in C:\Users\LG\IdeaProjects\dayone)
+[2024-11-28 21:22:00] [main] INFO  zerobase.dayone.DayoneApplication - No active profile set, falling back to default profiles: default
+[2024-11-28 21:22:02] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2024-11-28 21:22:02] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-11-28 21:22:02] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 137 ms. Found 3 JPA repository interfaces.
+[2024-11-28 21:22:02] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2024-11-28 21:22:02] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[2024-11-28 21:22:02] [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dayone.persist.CompanyRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-11-28 21:22:02] [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dayone.persist.DividendRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-11-28 21:22:02] [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface zerobase.dayone.persist.MemberRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-11-28 21:22:02] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+[2024-11-28 21:22:03] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7930ffa9' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2024-11-28 21:22:03] [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2024-11-28 21:22:03] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2024-11-28 21:22:03] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2024-11-28 21:22:03] [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2024-11-28 21:22:03] [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2024-11-28 21:22:03] [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2024-11-28 21:22:03] [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2844 ms
+[2024-11-28 21:22:03] [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2024-11-28 21:22:03] [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2024-11-28 21:22:03] [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dayone'
+[2024-11-28 21:22:04] [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-11-28 21:22:04] [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+[2024-11-28 21:22:04] [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2024-11-28 21:22:04] [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2024-11-28 21:22:05] [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2024-11-28 21:22:05] [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-11-28 21:22:05] [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-11-28 21:22:06] [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize(value="hasRole('WRITE')") found on specific method: public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.deleteCompany(java.lang.String)
+[2024-11-28 21:22:06] [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[zerobase.dayone.web.CompanyController; public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.deleteCompany(java.lang.String)]] with attributes [[authorize: 'hasRole('WRITE')', filter: 'null', filterTarget: 'null']]
+[2024-11-28 21:22:06] [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize(value="hasRole('READ')") found on specific method: public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.searchCompany(org.springframework.data.domain.Pageable)
+[2024-11-28 21:22:06] [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[zerobase.dayone.web.CompanyController; public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.searchCompany(org.springframework.data.domain.Pageable)]] with attributes [[authorize: 'hasRole('READ')', filter: 'null', filterTarget: 'null']]
+[2024-11-28 21:22:06] [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize(value="hasRole('WRITE')") found on specific method: public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.addCompany(zerobase.dayone.model.Company)
+[2024-11-28 21:22:06] [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[zerobase.dayone.web.CompanyController; public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.addCompany(zerobase.dayone.model.Company)]] with attributes [[authorize: 'hasRole('WRITE')', filter: 'null', filterTarget: 'null']]
+[2024-11-28 21:22:06] [main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/h2-console/**'] with []
+[2024-11-28 21:22:06] [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/**/signup']
+[2024-11-28 21:22:06] [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [permitAll] for Ant [pattern='/**/signin']
+[2024-11-28 21:22:06] [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [hasAuthority('ROLE_READ')] for Ant [pattern='/company/**']
+[2024-11-28 21:22:06] [main] DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource - Adding web access control expression [authenticated] for any request
+[2024-11-28 21:22:06] [main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@36e358de, org.springframework.security.web.context.SecurityContextPersistenceFilter@78ab63b5, org.springframework.security.web.header.HeaderWriterFilter@5c261c74, org.springframework.security.web.authentication.logout.LogoutFilter@18c26588, zerobase.dayone.security.JwtAuthenticationFilter@71e2843b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a56f608, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@69988d42, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2bed5828, org.springframework.security.web.session.SessionManagementFilter@468eff41, org.springframework.security.web.access.ExceptionTranslationFilter@5a5c2889, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2041c9a3]
+[2024-11-28 21:22:07] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2024-11-28 21:22:07] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2024-11-28 21:22:07] [main] INFO  zerobase.dayone.DayoneApplication - Started DayoneApplication in 7.277 seconds (JVM running for 12.457)
+[2024-11-28 21:22:41] [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-11-28 21:22:41] [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2024-11-28 21:22:41] [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[2024-11-28 21:22:41] [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing POST /auth/signin
+[2024-11-28 21:22:41] [http-nio-8080-exec-2] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-11-28 21:22:41] [http-nio-8080-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+[2024-11-28 21:22:41] [http-nio-8080-exec-2] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [POST /auth/signin] with attributes [permitAll]
+[2024-11-28 21:22:41] [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured POST /auth/signin
+[2024-11-28 21:22:41] [http-nio-8080-exec-2] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-11-28 21:22:41] [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: 존재하지 않는 ID입니다.] with root cause
+java.lang.RuntimeException: 존재하지 않는 ID입니다.
+	at zerobase.dayone.service.MemberService.lambda$authenticate$1(MemberService.java:47)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:408)
+	at zerobase.dayone.service.MemberService.authenticate(MemberService.java:47)
+	at zerobase.dayone.web.AuthController.singIn(AuthController.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:121)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:115)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at zerobase.dayone.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:41)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+[2024-11-28 21:22:41] [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing POST /error
+[2024-11-28 21:22:41] [http-nio-8080-exec-2] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-11-28 21:22:41] [http-nio-8080-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+[2024-11-28 21:22:41] [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured POST /error
+[2024-11-28 21:22:41] [http-nio-8080-exec-2] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-11-28 21:22:52] [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing POST /auth/signup
+[2024-11-28 21:22:52] [http-nio-8080-exec-4] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-11-28 21:22:52] [http-nio-8080-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+[2024-11-28 21:22:52] [http-nio-8080-exec-4] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [POST /auth/signup] with attributes [permitAll]
+[2024-11-28 21:22:52] [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured POST /auth/signup
+[2024-11-28 21:22:52] [http-nio-8080-exec-4] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-11-28 21:22:57] [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing POST /auth/signin
+[2024-11-28 21:22:57] [http-nio-8080-exec-5] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-11-28 21:22:57] [http-nio-8080-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+[2024-11-28 21:22:57] [http-nio-8080-exec-5] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [POST /auth/signin] with attributes [permitAll]
+[2024-11-28 21:22:57] [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured POST /auth/signin
+[2024-11-28 21:22:57] [http-nio-8080-exec-5] INFO  zerobase.dayone.web.AuthController - user login -> grace
+[2024-11-28 21:22:57] [http-nio-8080-exec-5] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-11-28 21:23:28] [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing POST /company
+[2024-11-28 21:23:28] [http-nio-8080-exec-6] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-11-28 21:23:28] [http-nio-8080-exec-6] INFO  z.d.s.JwtAuthenticationFilter - [grace] -> /company 
+[2024-11-28 21:23:28] [http-nio-8080-exec-6] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [POST /company] with attributes [hasAuthority('ROLE_READ')]
+[2024-11-28 21:23:28] [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured POST /company
+[2024-11-28 21:23:28] [http-nio-8080-exec-6] DEBUG o.s.s.a.i.a.MethodSecurityInterceptor - Authorized ReflectiveMethodInvocation: public org.springframework.http.ResponseEntity zerobase.dayone.web.CompanyController.addCompany(zerobase.dayone.model.Company); target is of class [zerobase.dayone.web.CompanyController] with attributes [[authorize: 'hasRole('WRITE')', filter: 'null', filterTarget: 'null']]
+[2024-11-28 21:23:33] [http-nio-8080-exec-6] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-11-28 21:23:35] [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /finance/dividend/3M Company (MMM)
+[2024-11-28 21:23:35] [http-nio-8080-exec-7] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-11-28 21:23:35] [http-nio-8080-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+[2024-11-28 21:23:35] [http-nio-8080-exec-7] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Failed to authorize filter invocation [GET /finance/dividend/3M Company (MMM)] with attributes [authenticated]
+[2024-11-28 21:23:35] [http-nio-8080-exec-7] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+[2024-11-28 21:23:35] [http-nio-8080-exec-7] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-11-28 21:23:35] [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+[2024-11-28 21:23:35] [http-nio-8080-exec-7] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-11-28 21:23:35] [http-nio-8080-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+[2024-11-28 21:23:35] [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /error
+[2024-11-28 21:23:35] [http-nio-8080-exec-7] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-11-28 21:23:46] [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /finance/dividend/3M Company (MMM)
+[2024-11-28 21:23:46] [http-nio-8080-exec-8] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Set SecurityContextHolder to empty SecurityContext
+[2024-11-28 21:23:46] [http-nio-8080-exec-8] INFO  z.d.s.JwtAuthenticationFilter - [grace] -> /finance/dividend/3M%20Company%20(MMM) 
+[2024-11-28 21:23:46] [http-nio-8080-exec-8] DEBUG o.s.s.w.a.i.FilterSecurityInterceptor - Authorized filter invocation [GET /finance/dividend/3M Company (MMM)] with attributes [authenticated]
+[2024-11-28 21:23:46] [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /finance/dividend/3M Company (MMM)
+[2024-11-28 21:23:49] [http-nio-8080-exec-8] INFO  z.dayone.service.FinanceService - search company -> 3M Company (MMM)
+[2024-11-28 21:23:49] [http-nio-8080-exec-8] DEBUG o.s.s.w.c.SecurityContextPersistenceFilter - Cleared SecurityContextHolder to complete request
+[2024-11-28 21:23:53] [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-11-28 21:23:53] [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2024-11-28 21:23:53] [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
